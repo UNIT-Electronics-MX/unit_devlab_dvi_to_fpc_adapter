@@ -1,24 +1,17 @@
 
-# DevLab: HDMI to FPC Adapter
-<!-- Exception:
-
-The PULSAR development board line does not use the DevLab: prefix.
-
-Format: PULSAR [MCU/Model]
-
-Examples: PULSAR C6, PULSAR H2, PULSAR RP2350
-
-The JUN R3 board also does not use DevLab:
-
-Example: JUN R3 -->
+# DevLab: DVI to FPC Adapter
 
 ## Introduction
 
-This is a modular development board based on a popular microcontroller, designed for rapid prototyping and educational use. It features flexible power options, modern connectivity, and user-friendly interfaces. An integrated LED matrix allows for simple visual feedback and display.
+This is a precision interface board designed to transition standard DVI signals to 2.54mm pitch pin headers for prototyping, analysis, and custom embedded applications.
+
+Distinctly features a dedicated FPC 22 pin 0.5mm compatible with HSTX protocol and QWIIC (JST 1mm) connector, bridging the DVI I2C signals to the QWIIC ecosystem. This allows microcontrollers to easily access EDID data, perform DDC/CI commands, or utilize DVI cabling as a robust, shielded transport medium for long-distance I2C communication.
+
+The module is a passive pass-through device, preserving signal integrity for high-speed differential pairs (TMDS) while providing convenient access points for low-speed control signals (CEC, SCL, SDA, HPD).
 
 <div align="center">
-  <img src="hardware/resources/unit_top_v_1_0_0_icp10111_barometric_pressure_sensor.png" width="450px" alt="Development Board">
-  <p><em>Development Board</em></p>
+  <img src="hardware/resources/unit_top_v_1_0_0_ue0117_devlab_dvi_to_fpc_adapter.png" width="450px" alt="DVI to FPC Adapter">
+  <p><em>DVI to FPC Adapter</em></p>
 </div>
 
 <div align="center">
@@ -36,28 +29,22 @@ This is a modular development board based on a popular microcontroller, designed
 
 ## Overview
 
-| Feature           | Description                                         |
-|-------------------|-----------------------------------------------------|
-| Microcontroller   | 8-bit MCU                                           |
-| Memory            | Flash, SRAM, EEPROM                                 |
-| Clock Speed       | 16 MHz                                              |
-| Power Supply      | USB-C (5V)                                          |
-| Interfaces        | UART, I2C, SPI, PWM, ADC, GPIO                      |
-| LED Matrix        | 5x5 RGB LED Matrix                                  |
-| Connectivity      | USB-C for programming and power                     |
-| Form Factor       | UNO-compatible                                      |
-| Development IDEs  | Arduino IDE, PlatformIO                             |
-| Onboard Features  | Integrated LED matrix, programmable LED, reset button|
-| Expansion Port    | I2C connector for sensors and modules               |
+| Feature            | Description                                                                                                                   |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Exposed pins       | Exposes all 19 DVI connector pins through labeled through-hole points.                                                       |
+| HSTX Compatibility | Compatible with the HSTX DVI protocol via a 22-pin FPC connector.                                                                    |
+| QWIIC Standard      | Routes the DDC bus (SCL/SDA) and 3.3V rails to a 4-pin Qwiic connector, enabling plug-and-play I2C connectivity. |
+| Interfaces         | I2C, DVI, HSTX                                                                                                                |
+
 
 </div>
 
 ## Applications
 
-- **Prototyping:** Quickly develop and test ideas.
-- **Education:** Suitable for learning microcontroller basics.
-- **Wearables:** Compact and versatile for wearable devices.
-- **Displays:** Use the LED matrix for simple visual output.
+- **Custom DVI-CEC Home Automation:** Allows a microcontroller to act as a smart remote, sending commands to power TVs or switch inputs via the single-wire CEC bus.
+- **Video and Image Output:** Suitable for displaying video or images on a monitor.
+- **HUD and Menu Interfaces:** Create custom HUDs (Heads-Up Displays) and menus for your applications.
+- **Cable Testing:** Verify cable continuity and connection stability.
 
 ## Resources
 
