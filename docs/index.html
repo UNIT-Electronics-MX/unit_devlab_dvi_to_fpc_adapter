@@ -175,12 +175,14 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="devlab-hdmi-to-fpc-adapter"><a class="header" href="#devlab-hdmi-to-fpc-adapter">DevLab: HDMI to FPC Adapter</a></h1>
+                        <h1 id="devlab-dvi-to-fpc-adapter"><a class="header" href="#devlab-dvi-to-fpc-adapter">DevLab: DVI to FPC Adapter</a></h1>
 <h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
-<p>This is a modular development board based on a popular microcontroller, designed for rapid prototyping and educational use. It features flexible power options, modern connectivity, and user-friendly interfaces. An integrated LED matrix allows for simple visual feedback and display.</p>
+<p>This is a precision interface board designed to transition standard DVI signals to 2.54mm pitch pin headers for prototyping, analysis, and custom embedded applications.</p>
+<p>Distinctly features a dedicated FPC 22 pin 0.5mm compatible with HSTX protocol and QWIIC (JST 1mm) connector, bridging the DVI I2C signals to the QWIIC ecosystem. This allows microcontrollers to easily access EDID data, perform DDC/CI commands, or utilize DVI cabling as a robust, shielded transport medium for long-distance I2C communication.</p>
+<p>The module is a passive pass-through device, preserving signal integrity for high-speed differential pairs (TMDS) while providing convenient access points for low-speed control signals (CEC, SCL, SDA, HPD).</p>
 <div align="center">
-  <img src="resources/unit_top_v_1_0_0_icp10111_barometric_pressure_sensor.png" style="max-width: 80%; height: auto;" alt="Development Board">
-  <p><em>Development Board</em></p>
+  <img src="resources/unit_top_v_1_0_0_ue0117_devlab_dvi_to_fpc_adapter.png" style="max-width: 80%; height: auto;" alt="DVI to FPC Adapter">
+  <p><em>DVI to FPC Adapter</em></p>
 </div>
 <div align="center">
 <h3 id="quick-setup"><a class="header" href="#quick-setup">Quick Setup</a></h3>
@@ -192,25 +194,18 @@
 <div align="center" >
 <h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Feature</th><th>Description</th></tr></thead><tbody>
-<tr><td>Microcontroller</td><td>8-bit MCU</td></tr>
-<tr><td>Memory</td><td>Flash, SRAM, EEPROM</td></tr>
-<tr><td>Clock Speed</td><td>16 MHz</td></tr>
-<tr><td>Power Supply</td><td>USB-C (5V)</td></tr>
-<tr><td>Interfaces</td><td>UART, I2C, SPI, PWM, ADC, GPIO</td></tr>
-<tr><td>LED Matrix</td><td>5x5 RGB LED Matrix</td></tr>
-<tr><td>Connectivity</td><td>USB-C for programming and power</td></tr>
-<tr><td>Form Factor</td><td>UNO-compatible</td></tr>
-<tr><td>Development IDEs</td><td>Arduino IDE, PlatformIO</td></tr>
-<tr><td>Onboard Features</td><td>Integrated LED matrix, programmable LED, reset button</td></tr>
-<tr><td>Expansion Port</td><td>I2C connector for sensors and modules</td></tr>
+<tr><td>Exposed pins</td><td>Exposes all 19 DVI connector pins through labeled through-hole points.</td></tr>
+<tr><td>HSTX Compatibility</td><td>Compatible with the HSTX DVI protocol via a 22-pin FPC connector.</td></tr>
+<tr><td>QWIIC Standard</td><td>Routes the DDC bus (SCL/SDA) and 3.3V rails to a 4-pin Qwiic connector, enabling plug-and-play I2C connectivity.</td></tr>
+<tr><td>Interfaces</td><td>I2C, DVI, HSTX</td></tr>
 </tbody></table>
 </div></div>
 <h2 id="applications"><a class="header" href="#applications">Applications</a></h2>
 <ul>
-<li><strong>Prototyping:</strong> Quickly develop and test ideas.</li>
-<li><strong>Education:</strong> Suitable for learning microcontroller basics.</li>
-<li><strong>Wearables:</strong> Compact and versatile for wearable devices.</li>
-<li><strong>Displays:</strong> Use the LED matrix for simple visual output.</li>
+<li><strong>Custom DVI-CEC Home Automation:</strong> Allows a microcontroller to act as a smart remote, sending commands to power TVs or switch inputs via the single-wire CEC bus.</li>
+<li><strong>Video and Image Output:</strong> Suitable for displaying video or images on a monitor.</li>
+<li><strong>HUD and Menu Interfaces:</strong> Create custom HUDs (Heads-Up Displays) and menus for your applications.</li>
+<li><strong>Cable Testing:</strong> Verify cable continuity and connection stability.</li>
 </ul>
 <h2 id="resources"><a class="header" href="#resources">Resources</a></h2>
 <ul>
