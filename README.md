@@ -54,11 +54,7 @@ The DVI to FPC Adapter seamlessly integrates with popular microcontroller platfo
 - **HUD and Menu Interfaces:** Create custom HUDs (Heads-Up Displays) and menus for your applications.
 - **Cable Testing:** Verify cable continuity and connection stability.
 
-## Resources
 
-- [Schematic Diagram](#)
-- [Pinout Diagram](#)
-- [Getting Started Guide](#)
 
 ## 📝 License
 
