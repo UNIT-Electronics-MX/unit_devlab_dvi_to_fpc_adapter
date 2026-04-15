@@ -18,7 +18,7 @@ The module is a passive pass-through device, preserving signal integrity for hig
 
 ### Quick Setup
 
-[<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](#)
+[<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](https://wiki.uelectronics.com/wiki/devlab-dvi-to-fpc-adapter)
 [<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](#)
 [<img src="https://img.shields.io/badge/Buy%20Now-orange?style=for-the-badge" alt="Buy Now">](#)
 [<img src="https://img.shields.io/badge/Getting%20Started-purple?style=for-the-badge" alt="Getting Started">](#)
@@ -38,6 +38,14 @@ The module is a passive pass-through device, preserving signal integrity for hig
 
 
 </div>
+
+## Compatibility Support
+
+The DVI to FPC Adapter seamlessly integrates with popular microcontroller platforms:
+
+- **RP2040**: PIO-based DVI signal generation and decoding via the [UNIT PicoDVI Library](https://github.com/UNIT-Electronics-MX/unit_picodvi_library)
+- **RP2350**: Hardware-accelerated HSTX protocol support via the [UNIT DVI HSTX Library](https://github.com/UNIT-Electronics-MX/unit_dvi_hstx_library)
+
 
 ## Applications
 
